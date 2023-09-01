@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- daisyUI and tailwind css link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI and tailwind css link -->
+</head>
+
+<body>
+
+    <section class="space-y-2 p-10">
+
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+                Whats your name?
+            </div>
+            <div class="collapse-content">
+                <p>Manik</p>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+                What do you want?
+            </div>
+            <div class="collapse-content">
+                <p>peace</p>
+            </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">
+                What is your favourite game
+            </div>
+            <div class="collapse-content">
+                <p class="text-justify text-slate-400 font-medium">Football
+
+                </p>
+            </div>
+        </div>
+        <button onclick="goHome()" class="bg-blue-400 font-medium text-white px-6 py-2 rounded-lg float-right hover:bg-blue-600">Go
+            Home</button>
+    </section>
+
+
+    <script src="./index.js"></script>
+    <script src="./blog.js"></script>
+</body>
+
+</html>
