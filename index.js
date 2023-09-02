@@ -210,5 +210,10 @@ const sortHandler = () => {
 
 
 
+
+
+
+
+
 loadCards("1000")
 loadData()
