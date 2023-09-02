@@ -115,10 +115,10 @@ const loadCards = async (categoryId) => {
 const sortHandler = () => {
 
     dataForSort.sort((a, b) => {
-        const viewsA = parseFloat(a.others.views.slice(0, -1));
-        const viewsB = parseFloat(b.others.views.slice(0, -1));
+        const A = parseFloat(a.others.views.slice(0, -1));
+        const B = parseFloat(b.others.views.slice(0, -1));
 
-        return viewsB - viewsA;
+        return B - A;
 
 
     });
