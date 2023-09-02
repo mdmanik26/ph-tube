@@ -2,11 +2,11 @@ const loadData = async () => {
     const promise = await fetch('https://openapi.programming-hero.com/api/videos/categories');
     const data = await promise.json();
     const categories = data.data;
-    // console.log(categories)
+    
 
     const tabsContainer = document.getElementById('tabs_Container')
     categories.forEach(category => {
-        // console.log(category.category)
+        
         const div = document.createElement('div');
         div.classList = `text-center bg-slate-200 text-black-400 text-lg px-5 py-2 rounded-lg hover:bg-red-600 `
         div.innerHTML = `
@@ -24,7 +24,7 @@ const loadCards = async (categoryId) => {
     const promise2 = await fetch(`https://openapi.programming-hero.com/api/videos/category/${categoryId}`);
     const data = await promise2.json();
     const cards = data.data;
-    // console.log(cards)
+    
     dataForSort = cards
 
 
@@ -100,8 +100,7 @@ const loadCards = async (categoryId) => {
         const cardsContainer = document.getElementById('cards_Container');
         cardsContainer.textContent = '';
         cardsContainer.classList = `min-h-[calc(100vh-200px)] flex justify-center items-center`
-        // console.log(cardsContainer)
-
+        
         cardsContainer.innerHTML = `
         <div class="max-w-[500px] mx-auto text-center">
                 <div class="max-w-[100px] mx-auto">
@@ -194,7 +193,7 @@ const sortHandler = () => {
         const cardsContainer = document.getElementById('cards_Container');
         cardsContainer.textContent = '';
         cardsContainer.classList = `min-h-[calc(100vh-200px)] flex justify-center items-center`
-        // console.log(cardsContainer)
+        
 
         cardsContainer.innerHTML = `
         <div class="max-w-[500px] mx-auto text-center">
